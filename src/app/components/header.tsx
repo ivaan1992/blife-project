@@ -3,12 +3,13 @@
 import Image from "next/image"
 import { useState } from "react"
 
-export default function Header() {
-    const [selected, setSelected] = useState<string | null> (null);
-
+export default function Header(
+    { cartCount }: { cartCount: number }
+) {
+    const [selected, setSelected] = useState<string>("promotions");
 
     return (
-        <header className="flex flex-row justify-between items-center px-8 py-8 h-16">
+        <header className="flex flex-row justify-between items-center px-12 py-12 h-16">
             <div className="flex">
                 <Image 
                     src="/assets/logo.jpg"
@@ -18,17 +19,17 @@ export default function Header() {
                  />
             </div>
             <div className="flex">
-                <p className={`ml-8 cursor-pointer font-bold rounded-full  ${selected === 'products' ?  'bg-yellow-500 w-32 text-center' : '' }`}
+                <p className={`cursor-pointer font-bold rounded-full w-32 text-center  ${selected === 'products' ?  'bg-yellow-500' : '' }`}
                     onClick={() => setSelected('products')}
                 >
                     Productos
                 </p>
-                <p className={`ml-8 cursor-pointer font-bold rounded-full  ${selected === 'promotions' ?  'bg-yellow-500 w-32 text-center' : '' }`}
+                <p className={`cursor-pointer font-bold rounded-full w-32 text-center ${selected === 'promotions' ?  'bg-yellow-500' : '' }`}
                     onClick={() => setSelected('promotions')}
                 >
                     Promociones
                 </p>
-                <p className={`ml-8 cursor-pointer font-bold rounded-full  ${selected === 'us' ?  'bg-yellow-500 w-32 text-center' : '' }`}
+                <p className={`cursor-pointer font-bold rounded-full w-32 text-center  ${selected === 'us' ?  'bg-yellow-500' : '' }`}
                     onClick={() => setSelected('us')}
                 >
                     Nosotros
@@ -57,8 +58,8 @@ export default function Header() {
                         height={20}
                         className="mr-4 cursor-pointer"
                     />
-                    <span className="absolute top-0 right-0 mt-[-10px] bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
-                        3
+                    <span className="absolute top-0 right-0 mt-[-10px] bg-red-500 text-white rounded-full text-xs text-center w-5 h-5 flex items-center justify-center">
+                        {cartCount}
                     </span>
                 </div>
             </div>
