@@ -1,19 +1,18 @@
 'use client';
-import { useState } from "react";
+
 import Image from "next/image"
+import { useCart } from "../context/cart-context";
 import { FaFacebook } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io";
 import { FiInstagram } from "react-icons/fi";
 
 export default function ProductCard() {
 
-    const [cartItemsCount, setCartItemsCount] = useState(0);
+    const { cartCount, setCartCount } = useCart();
 
     const addToCart = () => {
-        setCartItemsCount(cartItemsCount + 1);
+        setCartCount(cartCount + 1);
     }
-
-    console.log("cosas agregadas al carrito: ",cartItemsCount);
 
     return (
         <div className="flex w-screen px-16 py-16 border-solid border-black border-2">

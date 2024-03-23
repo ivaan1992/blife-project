@@ -2,8 +2,11 @@
 
 import Image from "next/image"
 import { useState } from "react"
+import { useCart } from "../context/cart-context";
 
-export default function Header({ cartItemsCount }: { cartItemsCount: number }){
+export default function Header(){
+    const { cartCount } = useCart();
+
     const [selected, setSelected] = useState("promotions");
 
     return (
@@ -56,11 +59,11 @@ export default function Header({ cartItemsCount }: { cartItemsCount: number }){
                         height={20}
                         className="mr-4 cursor-pointer"
                     />
-                        {cartItemsCount === 0 ? (
+                        {cartCount === 0 ? (
                             null
                         ) :  (
                             <span className="absolute top-0 right-0 mt-[-10px] bg-red-500 text-white rounded-full text-xs text-center w-5 h-5 flex items-center justify-center">
-                                {cartItemsCount}
+                                {cartCount}
                             </span>
                         )}
                 </div>
