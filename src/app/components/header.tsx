@@ -3,10 +3,8 @@
 import Image from "next/image"
 import { useState } from "react"
 
-export default function Header(
-    { cartCount }: { cartCount: number }
-) {
-    const [selected, setSelected] = useState<string>("promotions");
+export default function Header({ cartItemsCount }: { cartItemsCount: number }){
+    const [selected, setSelected] = useState("promotions");
 
     return (
         <header className="flex flex-row justify-between items-center px-12 py-12 h-16">
@@ -58,9 +56,13 @@ export default function Header(
                         height={20}
                         className="mr-4 cursor-pointer"
                     />
-                    <span className="absolute top-0 right-0 mt-[-10px] bg-red-500 text-white rounded-full text-xs text-center w-5 h-5 flex items-center justify-center">
-                        {cartCount}
-                    </span>
+                        {cartItemsCount === 0 ? (
+                            null
+                        ) :  (
+                            <span className="absolute top-0 right-0 mt-[-10px] bg-red-500 text-white rounded-full text-xs text-center w-5 h-5 flex items-center justify-center">
+                                {cartItemsCount}
+                            </span>
+                        )}
                 </div>
             </div>
         </header>
