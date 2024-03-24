@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image"
 import { useCart } from "../context/cart-context";
 import { FaFacebook } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io";

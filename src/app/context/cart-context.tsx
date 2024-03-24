@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useState, useContext, ReactNode } from "react";
+import React, { createContext, useState, useContext, type ReactNode } from "react";
 
 interface ICartContext {
   cartCount: number;

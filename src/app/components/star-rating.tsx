@@ -6,7 +6,7 @@ export default function StarRating() {
 
     return (
         <div className="flex flex-row justify-start">
-            {[...Array(5)].map((star, i) => {
+            {[...Array<string>(5)].map((star, i) => {
                 const ratingValue = i + 1;
                 return (
                     <label key={i} className="cursor-pointer">
