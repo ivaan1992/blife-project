@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io";
 import { FiInstagram } from "react-icons/fi";
 import LikeButton from "./like-button";
+import DiscountAd from "./discount-ad";
 
 export default function ProductCard() {
 
@@ -18,8 +19,11 @@ export default function ProductCard() {
     return (
         <div className="flex w-screen px-16 py-16 relative">
             <div className="flex flex-col border-solid border-[#E1E1E1] border-[1px] w-[340px] h-[514px] screen bg-[#F9F9F9] rounded-lg">
-                <div className="absolute mx-72 my-8">
+                <div className="absolute mx-72 my-4">
                     <LikeButton />
+                </div>
+                <div className="absolute mx-[300px] my-4">
+                    <DiscountAd />
                 </div>
                 <div className="flex flex-col items-center bg-[#FFFFFF] w-full h-4/5 rounded-lg border-[#E1E1E1]">
                     <Image
