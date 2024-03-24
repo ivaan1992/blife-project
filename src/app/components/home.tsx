@@ -5,7 +5,12 @@ export default function BlifePage() {
     return (
         <div className="w-full h-full justify-between">
             <PromotionalImage />
-            <ProductCard />
+            <div className="flex">
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+            </div>
         </div>
     )
 }

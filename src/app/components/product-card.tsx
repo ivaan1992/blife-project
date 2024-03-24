@@ -8,6 +8,7 @@ import { FiInstagram } from "react-icons/fi";
 import LikeButton from "./like-button";
 import DiscountAd from "./discount-ad";
 import Slider from "./slider";
+import StarRating from "./star-rating";
 
 export default function ProductCard() {
 
@@ -41,6 +42,9 @@ export default function ProductCard() {
                                 $134.00
                             </span>
                         </p>
+                    </div>
+                    <div className="flex flex-row w-4/5 mt-4">
+                        <StarRating />
                     </div>
                 </div>
                 <div className="flex px-6 py-6 justify-between">
