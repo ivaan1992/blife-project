@@ -12,7 +12,8 @@ export default function LikeButton() {
     return (
         <div className="flex flex-row border-solid border-[#E1E1E1] border-[1px] rounded-full bg-[#FFFFFF]">
             <button
-                onClick={handleLike} 
+                onClick={handleLike}
+                
                 className="flex w-16 h-8 items-center"
             >
                 {liked ? 

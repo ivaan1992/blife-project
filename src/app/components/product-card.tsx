@@ -7,6 +7,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { FiInstagram } from "react-icons/fi";
 import LikeButton from "./like-button";
 import DiscountAd from "./discount-ad";
+import Slider from "./slider";
 
 export default function ProductCard() {
 
@@ -25,14 +26,8 @@ export default function ProductCard() {
                 <div className="absolute mx-[300px] my-4">
                     <DiscountAd />
                 </div>
-                <div className="flex flex-col items-center bg-[#FFFFFF] w-full h-4/5 rounded-lg border-[#E1E1E1]">
-                    <Image
-                        src="/assets/product-1.png"
-                        alt="Product"
-                        width={250}
-                        height={200}
-                        className="mt-[12px]"    
-                    />
+                <div className="flex flex-col items-center bg-[#FFFFFF] w-full h-4/5 rounded-lg border-b-[#E1E1E1] border-b-[1px]">
+                    <Slider />
                     <div className="flex justify-between items-center w-4/5 ">
                         <p className="font-bold flex flex-col">
                                 Citrate Mag
