@@ -22,7 +22,7 @@ The purpose of this project is to show my web development basics in React.
 - Tailwind
 
 
-## [🌎 Live project](https://blife-project-6coacy498-ivaan1992s-projects.vercel.app/)
+## [🌎 Live project](https://blife-project-vn62-58e09u9wq-ivaan1992s-projects.vercel.app/ )
 
 ## Getting Started
 First, set up the ENV vars
