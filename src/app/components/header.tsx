@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useState } from "react"
 import { useCart } from "../context/cart-context";
+import style from "~/styles/responsive.module.css";
 
 export default function Header(){
     const { cartCount } = useCart();
@@ -10,7 +11,7 @@ export default function Header(){
     const [selected, setSelected] = useState("promotions");
 
     return (
-        <header className="flex flex-row justify-between items-center px-12 py-12 h-16">
+        <header className={`flex flex-row justify-between items-center px-12 py-12 h-16 ${style.header}`}>
             <div className="flex">
                 <Image 
                     src="/assets/logo.jpg"

@@ -1,0 +1,16 @@
+
+@media(max-width: 768px) {
+  .header {
+    width: 100vmax;
+  }
+
+  .promotionalImage {
+    width: 100vmax;
+  }
+
+  .discountImage {
+    width: 50%;
+    top: 120px; 
+    right: -250px;
+  }
+}
