@@ -1,0 +1,22 @@
+/* header */
+.menu {
+    display: none
+}
+
+@media(max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+/* Promotional Image */
+
+@media(max-width: 768px) {
+  .promotionalImage {
+    display: 100%;
+  }
+}

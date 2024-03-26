@@ -1,8 +1,9 @@
-import Image from "next/image"
+import Image from "next/image";
+import style from "~/styles/responsive.module.css";
 
 export default function PromotionalImage() {
     return (
-        <div className="flex w-screen">
+        <div className={`flex w-screen p-0 m-0`}>
             <div className="relative w-screen">
                 <Image
                     src="/assets/body-image.png"

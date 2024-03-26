@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { useState } from "react"
 import { useCart } from "../context/cart-context";
+import { GiHamburgerMenu } from "react-icons/gi";
+import style from "~/styles/responsive.module.css";
 
 export default function Header(){
     const { cartCount } = useCart();
@@ -67,6 +69,11 @@ export default function Header(){
                             </span>
                         )}
                 </div>
+            </div>
+            <div className={style.menu}>
+                <button>
+                    <GiHamburgerMenu />
+                </button>
             </div>
         </header>
     )
