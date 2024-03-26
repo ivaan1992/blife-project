@@ -1,22 +1,16 @@
-/* header */
-.menu {
-    display: none
-}
 
 @media(max-width: 768px) {
   .header {
-    width: 100%;
+    width: 100vmax;
   }
 
-  .menu {
-    display: block;
-  }
-}
-
-/* Promotional Image */
-
-@media(max-width: 768px) {
   .promotionalImage {
-    display: 100%;
+    width: 100vmax;
+  }
+
+  .discountImage {
+    width: 50%;
+    top: 120px; 
+    right: -250px;
   }
 }

@@ -3,7 +3,6 @@
 import Image from "next/image"
 import { useState } from "react"
 import { useCart } from "../context/cart-context";
-import { GiHamburgerMenu } from "react-icons/gi";
 import style from "~/styles/responsive.module.css";
 
 export default function Header(){
@@ -12,7 +11,7 @@ export default function Header(){
     const [selected, setSelected] = useState("promotions");
 
     return (
-        <header className="flex flex-row justify-between items-center px-12 py-12 h-16">
+        <header className={`flex flex-row justify-between items-center px-12 py-12 h-16 ${style.header}`}>
             <div className="flex">
                 <Image 
                     src="/assets/logo.jpg"
@@ -69,11 +68,6 @@ export default function Header(){
                             </span>
                         )}
                 </div>
-            </div>
-            <div className={style.menu}>
-                <button>
-                    <GiHamburgerMenu />
-                </button>
             </div>
         </header>
     )

@@ -18,12 +18,10 @@ export default function ProductCard() {
     }
 
     return (
-        <div className="flex w-screen px-16 py-16 relative">
+        <div className="flex px-10 py-16 relative">
             <div className="flex flex-col border-solid border-[#E1E1E1] border-[1px] w-[340px] h-[514px] screen bg-[#F9F9F9] rounded-lg">
-                <div className="absolute mx-72 my-4">
+                <div className="absolute my-4 flex flex-col">
                     <LikeButton />
-                </div>
-                <div className="absolute mx-[300px] my-4">
                     <DiscountAd />
                 </div>
                 <div className="flex flex-col items-center bg-[#FFFFFF] w-full h-4/5 rounded-lg border-b-[#E1E1E1] border-b-[1px]">

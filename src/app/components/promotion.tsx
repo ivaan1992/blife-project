@@ -3,8 +3,8 @@ import style from "~/styles/responsive.module.css";
 
 export default function PromotionalImage() {
     return (
-        <div className={`flex w-screen p-0 m-0`}>
-            <div className="relative w-screen">
+        <div className={`flex p-0 m-0`}>
+            <div className={`relative w-screen ${style.promotionalImage}`}>
                 <Image
                     src="/assets/body-image.png"
                     alt="Promotion"
@@ -13,7 +13,7 @@ export default function PromotionalImage() {
                     height={400}
                 />
             </div>
-            <div className="absolute top-40 right-40 flex">
+            <div className={`absolute top-40 right-40 flex ${style.discountImage}`}>
                 <Image
                     src="/assets/banner.png"
                     alt="Banner"
