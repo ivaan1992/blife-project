@@ -25,20 +25,14 @@ The purpose of this project is to show my web development basics in React.
 ## [🌎 Live project](https://blife-project-vn62-58e09u9wq-ivaan1992s-projects.vercel.app/ )
 
 ## Getting Started
-First, set up the ENV vars
-- on the root project create a new `.env` file
-- fill the following variables: `SALT` `NASA`
-  - the `SALT` can be any string
-  - the `NASA` is the api key for the NASA API
-
+First, clone the repo, in your terminal run this command
+```bash
+- git clone git@github.com:ivaan1992/blife-project.git
+```
 Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
